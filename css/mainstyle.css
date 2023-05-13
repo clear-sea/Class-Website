@@ -1,0 +1,102 @@
+body {
+    background-image: url("../images/bg.png");
+    background-attachment:fixed;        /*当内容高度大于图片高度时，背景图像的位置相对于viewport固定*/
+    background-color:black; 
+    background-size: 100% auto;
+    background-repeat:no-repeat;
+
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*导航栏样式*/
+.nav-bar {
+    background-image:linear-gradient(to bottom,rgb(53, 53, 53),rgba(0, 0, 0, 0));
+    color: white;
+    width: 100%;
+    height: 100px;
+}
+
+.nav-bar-btn {
+    /*导航栏上的按钮*/
+    height: auto;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    transition:all 0.2s linear;
+}
+
+.nav-bar-btn:hover {
+    background-color: rgb(82, 80, 80);
+    transition:all 0.2s linear;
+}
+
+.nav-link {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.copyright {
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-family:"宋体";
+    font-size:18px;
+    height: 70px;
+    padding: 20px;
+    bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.main {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.534);
+    backdrop-filter:blur(8px);
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color:white;
+}
+h2 {
+    text-align: center;
+    color:white;
+}
+h3 {
+    text-align: center;
+    color:white;
+}
+h4 {
+    text-align: center;
+    color:white;
+}
+h5 {
+    text-align: center;
+    color:white;
+}
+h6 {
+    text-align: center;
+    color:white;
+}
+
+p {
+    color: white;
+}
+
+.panel {
+    margin: auto;
+    border-radius: 10px;
+    border:solid 3px;
+    border-color:rgb(255, 0, 0);
+    width: 95%;
+}
+
+.art-text {
+    line-height: 10px;
+}
