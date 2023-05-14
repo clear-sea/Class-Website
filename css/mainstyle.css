@@ -13,7 +13,7 @@ body {
 /*导航栏样式*/
 .nav-bar {
     background-image:linear-gradient(to bottom,rgb(53, 53, 53),rgba(0, 0, 0, 0));
-    color: white;
+    color: rgb(255, 255, 255);
     width: 100%;
     height: 100px;
 }
@@ -54,10 +54,20 @@ body {
 .main {
     padding: 20px;
     border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.534);
+    background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter:blur(8px);
     width: 80%;
-    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: all 0.6s ease-in-out;
+}
+
+.main:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+    transition: all 0.6s ease-in-out;
 }
 
 h1 {
@@ -90,13 +100,24 @@ p {
 }
 
 .panel {
-    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 10px;
     border:solid 3px;
-    border-color:rgb(255, 0, 0);
+    border-color:rgb(0, 70, 221);
     width: 95%;
+    padding: 20px;
+    transition: all 0.2s linear;
+}
+
+.panel:hover {
+    border-color: rgb(70, 166, 255);
+    transition: all 0.2s linear;
 }
 
 .art-text {
     line-height: 10px;
+    text-shadow: 10px 10px 20px black;
 }
