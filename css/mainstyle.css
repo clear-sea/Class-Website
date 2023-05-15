@@ -121,3 +121,9 @@ p {
     line-height: 10px;
     text-shadow: 10px 10px 20px black;
 }
+
+.comment {
+    font-style: italic;
+    font-weight: 100;
+    color:rgb(126, 126, 126)
+}
