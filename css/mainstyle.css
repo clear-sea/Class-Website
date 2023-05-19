@@ -2,12 +2,13 @@ body {
     background-image: url("../images/bg.png");
     background-attachment:fixed;        /*当内容高度大于图片高度时，背景图像的位置相对于viewport固定*/
     background-color:black; 
-    background-size: 100% auto;
     background-repeat:no-repeat;
+    background-size: cover;
 
     width: 100%;
     margin: 0px;
     padding: 0px;
+    margin: 0px;
 }
 
 /*导航栏样式*/
