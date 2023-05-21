@@ -63,7 +63,10 @@ body {
     margin-left: auto;
     margin-top: 30px;
     margin-bottom: 30px;
+    position: relative;
     transition: all 0.6s ease-in-out;
+    animation: show 1s ease-in-out;
+    -webkit-animation: show 1s ease-in-out;
 }
 
 .main:hover {
@@ -128,4 +131,15 @@ table th {
 table td {
     border-left: 1px solid rgb(255, 255, 255);
     border-top: 1px solid rgb(255, 255, 255);
+}
+
+/*页面出现动画*/
+@keyframes show {
+    0% {top:300px;background-color: rgba(0, 0, 0, 0);}
+    100% {top:0px;background-color: rgba(0, 0, 0, 0.3);}
+}
+
+@-webkit-keyframes show {
+    0% {top:300px;background-color: rgba(0, 0, 0, 0);}
+    100% {top:0px;background-color: rgba(0, 0, 0, 0.3);}
 }
