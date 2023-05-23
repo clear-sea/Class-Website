@@ -64,13 +64,24 @@
                 </svg>
             </div>
 
+            <style>
+                @keyframes show_text_right {
+                    0% {opacity: 0;transform: translateX(200px);}
+                    100% {opacity: 1;transform: translateX(0px);}
+                }
+                @keyframes show_text_left {
+                    0% {opacity: 0;transform: translateX(-200px);}
+                    100% {opacity: 1;transform: translateX(0px);}
+                }
+            </style>
+
             <div class="panel">
-                <p class="art-text" style="text-align: left;color:rgb(0, 47, 255);font-size: 40px;font-family: '微软雅黑';">我们是一个...</p>
-                <p class="art-text" style="text-align: right;color:rgb(255, 0, 0);font-size: 100px;font-style: italic;margin-right: 10%;font-weight: 350;">团结奋<strong style="font-size: 150px;">进</strong></p>
-                <p class="art-text" style="text-align: left;color:rgb(255, 123, 0);font-size: 120px;font-style: italic;margin-left: 5%;font-weight: 350;"><strong style="font-size: 150px;">积</strong>极向上</p>
-                <p class="art-text" style="text-align: right;color:rgb(255, 230, 0);font-size: 70px;margin-right: 10%;font-weight: 250;"><strong>阳光开朗</strong></p>
-                <p class="art-text" style="text-align: left;color:rgb(94, 255, 0);font-size: 130px;margin-left: 15%;font-weight: 500;"><strong style="font-size: 170px;">正</strong>直善良</p>
-                <p class="art-text" style="text-align: right;color:rgb(0, 119, 255);font-size: 60px;"><strong style="font-size: 30px;">的</strong>班集体</p>
+                <p class="art-text" style="text-align: left;color:rgb(0, 47, 255);font-size: 40px;font-family: '微软雅黑';animation: show_text_left 0.5s linear;">我们是一个...</p>
+                <p class="art-text" style="text-align: right;color:rgb(255, 0, 0);font-size: 100px;font-style: italic;margin-right: 10%;font-weight: 350;animation: show_text_right 0.5s linear;">团结奋<strong style="font-size: 150px;">进</strong></p>
+                <p class="art-text" style="text-align: left;color:rgb(255, 123, 0);font-size: 120px;font-style: italic;margin-left: 5%;font-weight: 350;animation: show_text_left 0.5s linear;"><strong style="font-size: 150px;">积</strong>极向上</p>
+                <p class="art-text" style="text-align: right;color:rgb(255, 230, 0);font-size: 70px;margin-right: 10%;font-weight: 250;animation: show_text_right 0.5s linear;"><strong>阳光开朗</strong></p>
+                <p class="art-text" style="text-align: left;color:rgb(94, 255, 0);font-size: 130px;margin-left: 15%;font-weight: 500;animation: show_text_left 0.5s linear;"><strong style="font-size: 170px;">正</strong>直善良</p>
+                <p class="art-text" style="text-align: right;color:rgb(0, 119, 255);font-size: 60px;animation: show_text_right 0.5s linear;">的班集体</p>
             </div>
         </div>
 
