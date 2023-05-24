@@ -5,8 +5,18 @@
         <title>八年级十五班</title>
         <link rel="stylesheet" type="text/css" href="css/mainstyle.css">
         <link rel="icon" href="images/class_logo.png">
+
+        <style>
+            .h-title {
+                transition: all 0.2s ease-in-out;
+            }
+            .h-title:active {
+                transform: rotateY(180deg);
+                transition: all 0.2s ease-in-out;
+            }
+        </style>
     </head>
-    <body id="main-body" style="width: 100%;margin: 0px;padding: 0px;">
+    <body id="panel-body" style="width: 100%;margin: 0px;padding: 0px;">
         <!--导航栏-->
         <div class="nav-bar">
             <strong style="font-size: 25px;">十五班的小站</strong> |
@@ -20,15 +30,15 @@
         </div>
 
         <!--正文-->
-        <div class="main">
-            <h2 style="color:rgb(0, 102, 255);font-size: 50px;">章丘四中初中部</h1>
-            <h1 style="color:rgb(255, 208, 0);font-size: 80px;">八年级十五班</h2>
-
+        <div class="h-title">
+                <h2 style="color:rgb(0, 102, 255);font-size: 50px;text-align: center;">章丘四中初中部</h1>
+                <h1 style="color:rgb(255, 208, 0);font-size: 80px;text-align: center;">八年级十五班</h2>
+        </div>
+        <div class="items-left">
             
+            <h2>我们的口号</h2>
             <!--type-->
-            <div class="panel" align="center">
-                <h2>我们的口号</h2>
-
+            <div align="center">
                 <!-- https://github.com/DenverCoder1/readme-typing-svg/ -->
                 <svg xmlns='http://www.w3.org/2000/svg'
                 xmlns:xlink='http://www.w3.org/1999/xlink'
@@ -63,7 +73,9 @@
                 </text>
                 </svg>
             </div>
+        </div>
 
+        <div class="items-right">
             <style>
                 @keyframes show_text_right {
                     0% {opacity: 0;transform: translateX(200px);}
@@ -75,36 +87,35 @@
                 }
             </style>
 
-            <div class="panel">
-                <p class="art-text" style="text-align: left;color:rgb(0, 47, 255);font-size: 40px;font-family: '微软雅黑';animation: show_text_left 0.5s linear;">我们是一个...</p>
-                <p class="art-text" style="text-align: right;color:rgb(255, 0, 0);font-size: 100px;font-style: italic;margin-right: 10%;font-weight: 350;animation: show_text_right 0.5s linear;">团结奋<strong style="font-size: 150px;">进</strong></p>
-                <p class="art-text" style="text-align: left;color:rgb(255, 123, 0);font-size: 120px;font-style: italic;margin-left: 5%;font-weight: 350;animation: show_text_left 0.5s linear;"><strong style="font-size: 150px;">积</strong>极向上</p>
-                <p class="art-text" style="text-align: right;color:rgb(255, 230, 0);font-size: 70px;margin-right: 10%;font-weight: 250;animation: show_text_right 0.5s linear;"><strong>阳光开朗</strong></p>
-                <p class="art-text" style="text-align: left;color:rgb(94, 255, 0);font-size: 130px;margin-left: 15%;font-weight: 500;animation: show_text_left 0.5s linear;"><strong style="font-size: 170px;">正</strong>直善良</p>
-                <p class="art-text" style="text-align: right;color:rgb(0, 119, 255);font-size: 60px;animation: show_text_right 0.5s linear;">的班集体</p>
-            </div>
+            <p class="art-text" style="text-align: left;color:rgb(0, 47, 255);font-size: 40px;font-family: '微软雅黑';animation: show_text_left 0.5s linear;">我们是一个...</p>
+            <p class="art-text" style="text-align: right;color:rgb(255, 0, 0);font-size: 100px;font-style: italic;margin-right: 10%;font-weight: 350;animation: show_text_right 0.5s linear;">团结奋<strong style="font-size: 150px;">进</strong></p>
+            <p class="art-text" style="text-align: left;color:rgb(255, 123, 0);font-size: 120px;font-style: italic;margin-left: 5%;font-weight: 350;animation: show_text_left 0.5s linear;"><strong style="font-size: 150px;">积</strong>极向上</p>
+            <p class="art-text" style="text-align: right;color:rgb(255, 230, 0);font-size: 100px;font-style: italic;margin-right: 10%;font-weight: 350;animation: show_text_right 0.5s linear;">阳光开<strong style="font-size: 150px;">朗</strong></p>
+            <p class="art-text" style="text-align: left;color:rgb(94, 255, 0);font-size: 120px;font-style: italic;margin-left: 5%;font-weight: 350;animation: show_text_left 0.5s linear;"><strong style="font-size: 170px;">正</strong>直善良</p>
+            <p class="art-text" style="text-align: right;color:rgb(0, 47, 255);font-size: 40px;font-family: '微软雅黑';animation: show_text_right 0.5s linear;">...的班集体</p>
         </div>
 
-        <div class="main">
+
+        <div class="items-left">
             <h2>合照</h2>
-            <div style="column-count: 2;column-gap:20px;">
+            <div>
                 <p>毕业照(但是人不全)</p>
-                <span>
+                <div>
                     <img src="images/gp1.jpeg" width="500px" height="500px" alt="毕业合照">
-                </span>
+                </div>
                 <p>曲阜研学合照</p>
-                <span>
+                <div>
                     <img src="images/gp2.jpeg" width="500px" height="375px" alt="研学合照">
-                </span>
+                </div>
             </div>
         </div>
 
-        <div class="main">
+        <div class="items-right">
             <h2>同学录</h2>
             <p>NULL</p>
         </div>
 
-        <div class="main">
+        <div class="items-left">
             <h2>金光五星乐队</h2>
             <p class="comment">这本身也是一个梗</p>
             <span>
@@ -122,7 +133,7 @@
             </table>
         </div>
         
-        <div class="main">
+        <div class="items-right">
             <h2>ikun专栏</h2>
             <p>杜修俊同学，是我们班唯一的真ikun，当其他小黑子们玩梗时，他挺身而出：“你是小黑子”</p>
             <p class="comment">注：本班没有真正抹黑蔡徐坤的人，仅适当玩梗，笑梗不笑人!</p>

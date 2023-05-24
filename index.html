@@ -9,23 +9,17 @@
         <style>
             .btn {
                 border-radius: 15px;
-                border-color: none;
+                border: none;
 
+                color:rgb(0, 140, 255);
                 text-align: center;
                 font-size:50px;
-                
-                backdrop-filter: blur(10px);
-                -webkit-backdrop-filter: blur(10px);
-                background-color: rgba(255, 255, 255, 0.3);
 
                 width: 300px;
-                height:200px;
 
                 margin-left: auto;
                 margin-right: auto;
                 padding: 10px;
-
-                box-shadow: inset 0px 0px 8px rgba(255, 255, 255, 0.6);
 
                 transition: all 0.2s ease-in-out;
                 animation: show 1s linear;
@@ -55,48 +49,29 @@
                 background-image: url(images/bg.png);
                 background-repeat:no-repeat;               
                 background-size: cover;
+
+                margin: 0px;
+                padding: 0px;
+
+                display:flex;
+                align-items:center;/*所有子元素都垂直居中了*/
             }
 
             @keyframes show {
-                0% {
-                    opacity: 0;
-                    width: 0px;
-                    height: 0px;
-                    font-size: 0px;
-                    transform: translateY(800px);
-                }
-                100% {
-                    opacity: 1;
-                    width: 300px;
-                    height:200px;
-                    font-size: 50px;
-                    transform: translateY(0px);
-                }
+                0% {opacity: 0;}
+                100% {opacity: 1;}
             }
         </style>
     </head>
 
     <body id="main-body">
         <div class="background">
-            <!--导航栏-->
-            <div class="nav-bar">
-                <strong style="font-size: 25px;">十五班的小站</strong> |
-                <span class="nav-bar-btn">
-                    <a target="_blank" href="dict.html" class="nav-link" style="font-size: 20px;">班级词条</a>
-                </span>|
-                
-                <span class="nav-bar-btn">
-                    <a target="_blank" href="about.html" class="nav-link" style="font-size: 20px;">关于</a>
-                </span>
-            </div>
-
-            <div style="height: 20%;"></div>
             <!--按钮-->
-            <a href="main.html" style="text-decoration: none;">
-                <div class="btn">
-                    <p style="top:50%;bottom:50%;color:rgb(0, 140, 255);">进入网站</p>
-                </div>
-            </a>
+            <div style="margin-left: auto;margin-right: auto;">
+                <a href="main.html" style="text-decoration: none;">
+                    <p class="btn">进入网站»</p>
+                </a>
+            </div>
         </div>
     </body>
 </html>
