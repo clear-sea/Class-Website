@@ -76,68 +76,92 @@ a {
     transition: all 0.3s linear;
 }
 a::after {
-    content: "↗";
+    content: "»";
 }
 
 /*面板和子面板出现动画*/
 @keyframes panel-show {
-    0% {top:300px;opacity: 0;}
-    100% {top:0px;opacity: 1;}
+    0% {
+        top:300px;
+        opacity: 0;
+    }
+    100% {
+        top:0px;
+        opacity: 1;
+    }
 }
 
 @-webkit-keyframes panel-show {
-    0% {top:300px;opacity: 0;}
-    100% {top:0px;opacity: 1;}
+    0% {
+        top:300px;
+        opacity: 0;
+    }
+    100% {
+        top:0px;
+        opacity: 1;
+    }
 }
 
 @-moz-keyframes panel-show {
-    0% {top:300px;opacity: 0;}
-    100% {top:0px;opacity: 1;}
+    0% {
+        top:300px;
+        opacity: 0;
+    }
+    100% {
+        top:0px;
+        opacity: 1;
+    }
 }
 
 @-o-keyframes panel-show {
-    0% {top:300px;opacity: 0;}
-    100% {top:0px;opacity: 1;}
+    0% {
+        top:300px;
+        opacity: 0;
+    }
+    100% {
+        top:0px;
+        opacity: 1;
+    }
 }
 
 @keyframes nav_show {
     0% {
         opacity: 0;
-        width: 0px;
+        height: 0px;
     }
     100% {
         opacity: 1;
-        width: 100%;
+        height: 100px;
     }
 }
 @-moz-keyframes nav_show {
     0% {
         opacity: 0;
-        width: 0px;
+        height: 0px;
     }
     100% {
         opacity: 1;
-        width: 100%;
+        height: 100px;
     }
 }
 @-o-keyframes nav_show {
     0% {
         opacity: 0;
-        width: 0px;
+        height: 0px;
     }
     100% {
         opacity: 1;
-        width: 100%;
+        height: 100px;
     }
 }
 @-webkit-keyframes nav_show {
     0% {
         opacity: 0;
-        width: 0px;
+        height: 0px;
     }
     100% {
         opacity: 1;
-        width: 100%;
+        height: 100px;
     }
 }
 /*面板和子面板*/
@@ -150,7 +174,7 @@ a::after {
     box-shadow: inset 0px 0px 8px rgba(255, 255, 255, 0.6);
     width: 80%;
     margin-right: auto;
-    margin-left: auto;
+    margin-right: auto;
     margin-top: 30px;
     margin-bottom: 30px;
     position: relative;
@@ -168,7 +192,7 @@ a::after {
 
 .sub-panel {
     margin-right: auto;
-    margin-left: auto;
+    margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -203,67 +227,69 @@ table {
 }
 
 table th {
-    border-left: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgb(255, 255, 255);
     border-top: 1px solid rgb(255, 255, 255);
 }
 
 table td {
-    border-left: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgb(255, 255, 255);
     border-top: 1px solid rgb(255, 255, 255);
 }
 
 /*选择文本样式*/
 ::selection {
-    background-color: skyblue;
+    background-color: rgb(175, 175, 175);
 }
 
-/*加载动画*/
-.loading {
-    display: block;
-    position: relative;
-    margin: auto;
-    width: 6px;
-    height: 10px;
-
-    animation: rectangle infinite 1s ease-in-out -0,2s;
-
-    background-color: #000;
-}
-
-.loading:before,.loading:after {
-    position: absolute;
-    width: 6px;
-    height: 10px;
-    content: "";
-    background-color: #000;
-}
-
-.loading:before {
-    left: -14px;
-    animation: rectangle infinite 1s ease-in-out -0.4s;
-}
-
-.loading:after {
-    right: -14px;
-    animation: rectangle infinite 1s ease-in-out;
-}
-
-@keyframes rectangle {
-    0%,80%,100% {
-        height: 20px;
-        box-shadow: 0 0 #000;
-    }
-    40% {
-        height: 30px;
-        box-shadow: 0 -20px #000;
-    }
-}
 /*条目*/
+/*出现动画*/
+@keyframes show-items-left {
+    0% {
+        transform: translateX(-500px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+@keyframes show-items-right {
+    0% {
+        transform: translateX(500px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+/*right*/
 .items-left {
     width: 70%;
     margin-left: 0px;
     margin-right: auto;
-    margin-top: 30px;
+    margin-bottom: 60px;
+    transition: all 0.5s linear;
+    animation: show-items-left 0.6s ease-in-out;
+}
+
+.items-left-h2 {
+    margin-left: 0px;
+    margin-right: auto;
+    text-align: left;
+    transition: all 0.5s linear;
+}
+.items-left-h2::before {
+    display: inline-block;
+    content: "";
+    width: 5px;
+    height:100%;
+    background-color: rgb(0, 153, 255);
+    transition: all 0.5s linear;
+}
+.items-left-h2::after {
+    display: inline-block;
+    content: "";
+    width: 5px;
+    height:100%;
+    background-color: rgb(0, 153, 255);
+    transition: all 0.5s linear;
 }
 
 .items-left::before {
@@ -271,20 +297,70 @@ table td {
     display: block;
     background-color: rgb(0, 153, 255);
     width: 100%;
-    height:7px;
+    height:5px;
+}
+.items-left::after {
+    content: "";
+    display: block;
+    background-color: rgb(0, 153, 255);
+    width: 100%;
+    height:5px;
+}
+/*悬停效果*/
+.items-left:hover  {
+    width: 85%;
+    transition: all 0.5s linear;
 }
 
+/*right*/
 .items-right {
     width: 70%;
     margin-right: 0px;
     margin-left: auto;
-    margin-top: 30px;
+    margin-bottom: 60px;
+    transition: all 0.5s linear;
+    animation: show-items-right 0.6s ease-in-out;
+}
+
+.items-right-h2 {
+    margin-left: auto;
+    margin-right: 0px;
+    text-align: right;
+    transition: all 0.5s linear;
+}
+.items-right-h2::before {
+    display: inline-block;
+    content: "";
+    width: 5px;
+    height:100%;
+    background-color: rgb(0, 153, 255);
+    transition: all 0.5s linear;
+}
+.items-right-h2::after {
+    display: inline-block;
+    content: "";
+    width: 5px;
+    height:100%;
+    background-color: rgb(0, 153, 255);
+    transition: all 0.5s linear;
 }
 
 .items-right::before {
     content: "";
     display: block;
-    background-color: rgb(0, 153, 255);;
+    background-color: rgb(0, 153, 255);
     width: 100%;
-    height:7px;
+    height:5px;
+}
+.items-right::after {
+    content: "";
+    display: block;
+    background-color: rgb(0, 153, 255);
+    width: 100%;
+    height:5px;
+}
+/*悬停效果*/
+.items-right:hover  {
+    width: 85%;
+    transition: all 0.5s linear;
 }
