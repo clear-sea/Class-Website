@@ -260,35 +260,37 @@ table td {
         transform: translateX(0px);
     }
 }
-/*right*/
+/*left*/
+.items-block-left {
+    animation: show-items-left 0.6s ease-in-out;
+}
+.items-block-right {
+    animation: show-items-right 0.6s ease-in-out;
+}
+
 .items-left {
     width: 70%;
-    margin-left: 0px;
+    margin-left: 10px;
     margin-right: auto;
     margin-bottom: 60px;
     transition: all 0.5s ease-in-out;
-    animation: show-items-left 0.6s ease-in-out;
 }
 
 .items-left-h2 {
-    margin-left: 0px;
+    margin-left: 10px;
     margin-right: auto;
     text-align: left;
     transition: all 0.5s linear;
 }
 .items-left-h2::before {
-    display: inline-block;
-    content: "";
-    width: 5px;
-    height:100%;
+    content: "|";
+    color:rgb(0, 153, 255);
     background-color: rgb(0, 153, 255);
     transition: all 0.5s linear;
 }
 .items-left-h2::after {
-    display: inline-block;
-    content: "";
-    width: 5px;
-    height:100%;
+    content: "|";
+    color:rgb(0, 153, 255);
     background-color: rgb(0, 153, 255);
     transition: all 0.5s linear;
 }
@@ -310,39 +312,36 @@ table td {
 /*悬停效果*/
 .items-left:hover  {
     width: 85%;
+    background-color: rgba(0, 0, 0, 0.25);
     transition: all 0.5s linear;
 }
 
 /*right*/
 .items-right {
     width: 70%;
-    margin-right: 0px;
+    margin-right: 10px;
     margin-left: auto;
     margin-bottom: 60px;
     transition: all 0.5s ease-in-out;
-    animation: show-items-right 0.6s ease-in-out;
 }
 
 .items-right-h2 {
     margin-left: auto;
-    margin-right: 0px;
+    margin-right: 10px;
     text-align: right;
     transition: all 0.5s linear;
 }
 .items-right-h2::before {
-    display: inline-block;
-    content: "";
-    width: 5px;
-    height:100%;
+    content: "|";
+    color:rgb(0, 153, 255);
     background-color: rgb(0, 153, 255);
     transition: all 0.5s linear;
 }
 .items-right-h2::after {
-    display: inline-block;
-    content: "";
-    width: 5px;
-    height:100%;
+    content: "|";
+    color:rgb(0, 153, 255);
     background-color: rgb(0, 153, 255);
+    transition: all 0.5s linear;
     transition: all 0.5s linear;
 }
 
@@ -363,5 +362,6 @@ table td {
 /*悬停效果*/
 .items-right:hover  {
     width: 85%;
+    background-color: rgba(0, 0, 0, 0.25);
     transition: all 0.5s linear;
 }
