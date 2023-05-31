@@ -233,14 +233,49 @@ table td {
 @keyframes show-items {
     0% {
         transform: translateY(300px);
+        opacity: 0;
     }
     100% {
         transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@-moz-keyframes show-items {
+    0% {
+        transform: translateY(300px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@-o-keyframes show-items {
+    0% {
+        transform: translateY(300px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes show-items {
+    0% {
+        transform: translateY(300px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
     }
 }
 /*left*/
 .items-block {
     animation: show-items 1s ease-in-out;
+    -o-animation: show-items 1s ease-in-out;
+    -moz-animation: show-items 1s ease-in-out;
+    -webkit-animation: show-items 1s ease-in-out;
 }
 
 .items {
