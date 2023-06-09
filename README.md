@@ -1,5 +1,5 @@
 # Class-Website
 班级小站
 
-# 预览
-<iframe src="lightbytecode.github.io/Class-Website/"></iframe>
+# 网址
+<a href="https://clear-sea.github.io/Class-Website/" target="_blank">网址</a>
